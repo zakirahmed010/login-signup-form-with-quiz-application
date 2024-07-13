@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button id="show-login">Already have an account? Log In</button>
+        </div>
+
+        <div id="login-form" style="display:none;">
+            <h2>Log In</h2>
+            <form id="login">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <button id="show-signup">Don't have an account? Sign Up</button>
+        </div>
+
+        <div id="quiz" style="display:none;">
+            <h2>Quiz</h2>
+            <div id="question-container">
+                <p id="question-text"></p>
+                <ul id="options-list"></ul>
+                <p id="feedback"></p>
+                <button id="next-question" style="display:none;">Next Question</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
